@@ -52,6 +52,23 @@
             <td>1234123444</td>
             <td>BITS</td>
         </tr>
+        <tr *ngFor = "let data1 of lnames"> 
+
+            <td>{{data1.id}}</td>
+            <td>{{data1.name}}</td>
+            <td>{{data1.email}}</td>
+            <td>{{data1.phone}}</td>
+            <td>{{data1.college}}</td>
+        </tr>
+
+
     </tbody>
 
 </table>
+
+<h1>
+    <li *ngFor="let data of lnames">
+        {{data.id}},
+        {{data.name}}
+    </li>
+</h1>
